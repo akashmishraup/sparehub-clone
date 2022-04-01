@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spare Hub</title>
+    <link rel="canonical" href="https://spareshubfranchise.com/">
+    <script src="https://kit.fontawesome.com/4d94468d16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <link rel="stylesheet" href="./css/enquiry.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  /************LINKED TO INDEX.HTML *********/
+   /* *********PRODUCT CODE:BY PARVEJ***********START***** */
+  
+  body {
+    width: 90%;
+    margin: 0;
+  
+    width: 100%;
+    margin: 0 auto;
+  
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 25px;
+    /* padding: 20px; */
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  #products-section {
+    padding: 20px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  #products .product-div .imgDiv {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    margin: auto;
+  }
+  #products .product-image {
+    width: 100%;
+    display: flex;
+  }
+  #products .product-div .product-title {
+    color: #585858;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+    height: 50px;
+  }
+  #products .product-div .product-price {
+    font-size: 25px;
+    color: #444;
+    font-weight: 600;
+    text-align: center;
+    color: #08c;
+  }
+  #products .product-div .cartBtn,a{
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    line-height: 30px;
+    padding: 5px 8px 0 8px;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  #products .product-div a {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  #products .product-div .cartDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+  #products .product-div:hover .cartDiv > .cartBtn {
+    background: #08c;
+    border: 1px solid #08c;
+    color: white;
+  }
+  #products .product-div .cartDiv .fa-heart {
+    color: red;
+    font-size: 25px;
+    margin-right: 10px;
+    border-color: red;
+    position: absolute;
+    z-index: 1;
+    display: none;
+  }
+  #products .product-div .cartDiv .fa-signal {
+    border-color: #52b9b5;
+    font-size: 20px;
+    color: #52b9b5;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+  }
+  #products .product-div:hover .cartDiv > .fa-signal {
+    position: unset;
+    z-index: unset;
+    display: inline-block;
+  }
+  #products .product-div:hover .cartDiv > .fa-heart {
+    position: unset;
+    z-index: unset;
+    display: inline-block;
+  }
+  #products .product-div .ratingDiv {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #products .product-div .ratingDiv .line {
+    width: 20%;
+    height: 1px;
+    background: #c3c5c9;
+  }
+  #products .product-div .ratingDiv .rating {
+    color: #c3c5c9;
+  }
+  @media screen and (max-width: 820px) {
+    #products {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(auto, auto);
+    }
+  }
+  @media screen and (max-width: 620px) {
+    #products {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(auto, auto);
+    }
+  
+   }
+  
+  #show-Item{
+    display: flex;
+    gap: 30px;
+  }
+  #show-Item .show-item-image-div{
+    border: 1px solid #585858;
+    padding: 40px;
+    border-radius: 5px;
+    width: 20%;
+  }
+  #show-Item .show-item-image{
+    width: 100%;
+    display: flex;
+  }
+  #show-Item .show-item-title{
+    font-size: 30px;
+    color: #08c;
+    font-weight: bold;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
+  }
+  #show-Item .show-item-price{
+    font-size: 30px;
+    color: #08c;
+    font-weight: bold;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
+  }
+  #show-Item .show-item-rating{
+    color: #444;
+  }
+  #show-Item .show-item-addToCart{
+    display:inline-block;
+    font-size: 18px;
+    background: #08c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  #show-Item .show-item-priceQty-div{
+    border: 1px solid black;
+    display: flex;
+  }
+  #show-Item .show-item-qty{
+    width: 40px;
+    height: 35px;
+    margin: 0 20px 0 0;
+    border:2px solid #08c;
+    border-radius: 4px;
+  }
+  
+   
+   /* CART CODE */
+   /* #main-container {
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     z-index: -1;
+   } */
+  
+   #cart {
+     position: absolute;
+     right: 20px;
+     top: 100px;
+     z-index: 99999;
+     background: white;
+     box-sizing: border-box;
+     overflow-y: scroll;
+     display: none;
+     padding: 25px 18px;
+     width: 350px;
+     height: 400px;
+     border-top: 6px solid #08c;
+     color: #777;
+     border-radius: 8px;
+     box-shadow: 0 0 5px rgb(0 0 0 / 25%);
+   }
+  
+   #cart .cart-item-image-div {
+     margin-right: 10px;
+     width: 50px;
+     height: 50px;
+   }
+  
+   #cart .cart-item {
+     display: flex;
+     /* border: 1px solid #777; */
+     padding: 5px;
+     border-radius: 4px;
+   }
+  
+   #cart .cart-item-image {
+     width: 50px;
+     height: 50px;
+   }
+  
+   #cart .cart-item-title {
+     font-size: 15px;
+     color: #08c;
+     padding: 0;
+     margin: 0;
+   }
+  
+   #cart .cart-item-price {
+     margin: 5px 0;
+   }
+  
+   #cart .cart-item-qty {
+     width: 20px;
+     height: 20px;
+     border-radius: 0;
+   }
+   #cart #cart-checkOut{
+   background-image: none;
+   background: #08c;
+   border: 1px solid #08c;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+   font-weight: 600;
+   padding: 7px 15px;
+   font-size: 1.2rem;
+   box-sizing: border-box;
+   vertical-align: middle;
+   font-weight: 400;
+   line-height: 22px;
+   border-radius: 4px;
+   }
+   #cart #cart-totalPrice{
+     font-size: 25px;
+     color: #08c;
+   }
+   /* #cart .cart-item-Qtydiv{
+      padding: 10px;
+   } */
+   .fa-bag-shopping{
+     font-size: 60px;
+     color: #08c;
+     position: relative;
+   }
+   #mycart-count{
+     font-size: 15px;
+     position: absolute;
+     font-weight: bold;
+     color: #08c;
+     z-index: 9999;
+   }
+   #close-cart{
+     position: absolute;
+     right: 10px;
+     top: 5px;
+     color: white;
+     font-weight: bold;
+     border-radius: 50%;
+     padding: 3px 9px;
+     border: none;
+     background: #08c;
+   }
+   #close-cart:hover{
+      background: dodgerblue;
+   }
+   #testimonials{
+      margin: 30px auto;
+      font-family: "Open-sans";
+   }
+   #testimonials h2{
+      margin-left: 30px;
+      margin-bottom: 15px;
+      color: #777;
+   }
+   #testimonials #testimonials-container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      width: 90%;
+      margin: auto;
+      background: #f9f9f9;
+   }
+   .testimonial-people{
+      display: flex;
+      padding: 20px;
+   }
+   #testimonials #testimonials-container .testimonial-people .image{
+      margin-right: 10px;
+   }
+   #testimonials #testimonials-container .testimonial-people .name h3{
+      margin-bottom: 10px;
+   }
+   
+   /* *********PRODUCT CODE:BY PARVEJ***********END***** */
+  
+  
+   /* *********PRODUCT CODE:BY HARSH***********START***** */
+  
+  
+   .colors2 #brands1 > ul {
+    display: none;
+  }
+  
+  .colors2 #brands1:hover > ul {
+    background-color: #08c;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 10px 20px;
+    z-index: 30;
+    list-style-type: none;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+  }
+  .colors2 #categories1 > ul {
+    display: none;
+    
+  }
+  .colors2 #categories1:hover > ul {
+    list-style-type: none;
+    background-color: #08c;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 10px;
+    gap: 10px 20px;
+    z-index: 30;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+  }
+  /* nav */
+  *  Styling for the  header  */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+  
+  .colors {
+    margin: 0px auto;
+    /* width: 100%; */
+    height: 30px;
+    background-color:#f0f0ed;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    border-top: 4px solid black;
+  }
+  
+  .colors2 {
+    background-color: #f0f0ed;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+  
+  header {
+    margin: 10px 10px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  /* Search Input */
+  .search-input {
+    width: 800px;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-input ion-icon {
+    font-size: 30px;
+    color: rgb(36, 108, 241);
+  }
+  .search-input input {
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2px 8px;
+  }
+  
+  /*    Contact Detailes    */
+  .search-input + div {
+    width: 600px;
+    /* background-color: aqua; */
+    height: 70px;
+    margin-right: -90px;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .search-input + div span {
+    font-size: 12px;
+    color: rgb(36, 108, 241);
+    text-align: start;
+    margin-right: 20px;
+  }
+  
+  /* Features */
+  
+  .features {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    height: 60px;
+  }
+  
+  .features > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .features > div ion-icon {
+    font-size: 40px;
+    color: blue;
+  }
+  /* Coding for icons */
+  
+  ion-icon[name="bag-outline"] {
+    font-size: 150px;
+    color: rgb(25, 108, 216);
+  }
+  
+  ion-icon[name="search-circle-oultine"] {
+    font-size: 50px;
+  }
+  .colors a{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color:#08c;
+    padding: 0;
+    font-size: 12px;
+  }
+  .colors>p{
+    font-size: 12px;
+  }
+  /* slider */
+  #slider{
+      margin: auto;
+      width: 98%;
+      overflow: hidden;
+  }
+  
+  .slide{
+      width: 20%;
+      float: left;		
+  }
+  .slide>img{
+      width: 100%;
+      float: left;
+  }
+  #inner-box {
+      width: 500%;
+      position: relative;
+      animation-name: ajit;
+      animation-duration: 25s;
+      animation-iteration-count:infinite;
+  }
+  
+  @keyframes ajit{
+      0%{
+          left: 0%;
+      }
+      16%{
+          left: 0%;
+      }
+      17%{
+          left: -100%;
+      }
+      36%{
+          left: -100%;
+      }
+      37%{
+          left: -200%;
+      }
+      56%{
+          left: -200%;
+      }
+      57%{
+          left: -300%;
+      }
+      76%{
+          left: -300%;
+      }
+      77%{
+          left: -400%;
+      }
+      96%{
+          left: -400%;
+      }
+      97%{
+          left: -500%;
+      }
+  }
+  /* brand */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+  /* #body {
+  color: #777;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.3rem;
+  width: 100%;
+  } */
+  
+  #brands a {
+    border: none;
+  }
+  #container {
+    width: 100%;
+  }
+  
+  #row {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-evenly;
+  }
+  
+  #brands > #container > h2,
+  #container2,
+  #container2 > h2 {
+    width: 80%;
+    margin: 20px auto;
+    color: #777;
+  }
+  #container2 > h2 {
+      width: 80%;
+      margin: 20px 0;
+      color: #777;
+  }
+  #row > div {
+    height: 100px;
+    width: 122.97px;
+    padding: 11.3906px 15px;
+  }
+  .brandimglogo {
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .brandimglogo:hover {
+    transform: scale(1.2);
+  }
+  
+  #row2 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2px 25px;
+  }
+  
+  .img2 {
+    width: 100%;
+    height: 109.91px;
+  }
+  @media all and (min-width: 381px) and (max-width: 700px) {
+    #row {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, auto);
+      justify-content: space-around;
+    }
+    #row > div {
+      height: 56px;
+      width: 102.97px;
+      padding: 5.3906px 15px;
+    }
+    .brandimglogo {
+      height: 39.2px;
+      width: 39.2px;
+      border-radius: 50%;
+      width: 60%;
+      padding: 1%;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  @media all and (min-width: 10px) and (max-width: 380px) {
+    #row {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, auto);
+    }
+    #row > div {
+      height: 73px;
+      width: 132.97px;
+      padding: 3.3906px 15px;
+    }
+    .brandimglogo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      width: 60%;
+      padding: 1%;
+      text-align: center;
+      cursor: pointer;
+    }
+    .brandimglogo:hover {
+      transform: scale(1.2);
+    }
+  }
+  /* enquiry */
+  *{
+      font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+  #form-div{
+      width: 500px;
+      height: 85px;
+      border-radius: 5px;
+      background: rgb(139,166,57);
+      position: fixed;
+      bottom: 0px;
+      left: 68px;
+  }
+  @keyframes hideEnquiryForm{
+      from{
+          bottom : 0px;
+          }
+  
+          to{
+          bottom : -100px;
+          }
+  }
+  @keyframes showEnquiryForm{
+      from{
+          bottom : -100px;
+          }
+  
+          to{
+          bottom : 0px;
+          }
+  }
+  #form-div > p{
+      font-size: 12px;
+      text-align: center;
+      color: white;
+      font-weight: 600;
+      margin-top: 15px;
+      margin-bottom: 5px;
+  }
+  #form-div > form{
+      width: 90%;
+      margin: auto;
+  }
+  #enquiryInput{
+      width: 300px;
+      height: 35px;
+      padding: 0px;
+      border-radius: 5px;
+      border:0px solid white;
+  }
+  
+  #enquiryInput:focus{
+      outline-width: 0px;
+  }
+  
+  form > button{
+      margin-left: 20px;
+      padding: 10px;
+      width: 80px;
+      background: teal;
+      color: white;
+      border: 1px solid teal;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 16px;
+  }
+  #form-div span{
+      position: absolute;
+      top: -15px;
+      right: -12px;
+      background: #4faede;
+      padding: 5px 14px 8px 14px;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      }
+  
+      .callbtn{
+         position: fixed;
+         left: 20px;
+         bottom: 0px; 
+         cursor: pointer;
+      }
+  
+      .callbtn > img{
+          width: 48px;
+          height: 48px;
+      }
+  
+      @keyframes showCallBtn{
+          from{
+              bottom: -49px;
+              border-radius: 50px 50px 0px 0px;
+          }
+  
+          to{
+              bottom: 0px;
+          }
+      }
+  
+   @keyframes hideCallBtn{
+          0%{
+              bottom: 0px;
+              /*border-radius: 50px 50px 0px 0px;*/
+          }
+          50%{
+              border-radius: 50px 50px 0px 0px;
+          }
+          100%{
+              bottom: -49px;
+     
+          }
+      }
+      /* footer */
+      * {
+      font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+  .mainBox{
+      display: grid;
+      width: 100%;
+      margin: auto;
+      grid-template-columns: auto;
+      /* grid-template-rows: 2fr 1fr; */
+      border: 0px dashed black;
+      background-color:#121214 ;
+  }
+  .mainBox div{
+      border: 0px solid lightgreen;
+  }
+  .box2{
+      background-color:black ;
+      margin-top: 50px;
+  }
+  .box2>div{
+      width: 70%;
+      margin: 30px auto;
+      text-align: center;
+      color:  gray;
+      font-size: 12px;
+  }
+  .box1{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      width: 70%;
+      margin: 20px auto; 
+  }
+  #footer .box1 p{
+      cursor: pointer;
+      margin-bottom:5px;
+  }
+  .box1>div{
+      color: white;
+  }
+  button{
+      background-color: #784882;
+      border-radius: 7px;
+      font-size: 18px;
+  }
+  form#subscribe{
+      display: flex;
+      margin-top: 15px;
+  }
+  input{
+      font-size: 18px;
+      border-radius: 7px;
+      display: inline-block;
+  }
+  #subscribe-button{
+      display: inline-block;
+      margin-left: -10px;
+      border-radius: 0 5px 5px 0;
+      padding: 5px 10px;
+      background: #08c;
+      color: white;
+      border: none;
+  }
+  
+  #footer{
+      position: relative;
+  }
+  #footer p{
+      font-size: 12px;
+  }
+  .footer-ribbon{
+      position: absolute;
+      margin: -56px 0 25px;
+      padding: 10px 20px 6px;
+      background-color: #08c;
+      left: 50px;
+      bottom: 300px;
+      font-family: "Shadows Into Light",cursive;
+      color: white;
+      font-size: 20px;
+      font-weight: lighter;
+      }
+    </style>
+</head>
+<body>
+    <div id="cart">
+        <button id="cart-checkOut">Check Out</button>
+        <button id="close-cart">X</button>
+        <p id="cart-totalPrice">0</p>
+        <div id="cartItems"></div>
+      </div>
+      <!-- Start of the Header Section -->
+      
+      <div class="colors">
+        <p id="userName">
+    
+        </p>
+        <a href="https://spareshub.com/contact">CONTACT US</a>
+        <a href="https://spareshub.com/customer/account/login/referer/aHR0cHM6Ly9zcGFyZXNodWIuY29tLw%2C%2C/">SIGN IN</a>
+        <a href="https://spareshub.com/customer/account/create/">CREATE AN ACCOUNT</a>
+      </div>
+      <header>
+        <div>
+          <img src="https://spareshub.com/pub/media/logo/stores/1/200x50xlogo.png.pagespeed.ic.3_mBb67eog.webp" alt="" />
+        </div>
+    
+        <div class="search-input">
+          <input type="text" placeholder="Search entire store Here">
+          </input>
+          <ion-icon name="search-circle-outline"></ion-icon>
+    
+        </div>
+    
+        <div>
+          <span>Call Us- <ion-icon name="call-outline"></ion-icon> 919307901479</span>
+          <span>Whatsup Us- <ion-icon name="logo-whatsapp"></ion-icon> 9307901458
+          </span>
+          <span>Contact Us-
+            <ion-icon name="mail-outline"></ion-icon> care@spareshub.com
+          </span>
+        </div>
+        <div id="mycart" name="bag-outline"><span id="mycart-count"></span><i class="fa-solid fa-bag-shopping"></i></div>
+      </header>
+    
+      <div class="colors2">
+        <div class="colors2">
+          <div id="brands1">
+            BRANDS <i class="arrow down"></i>
+            <ul>
+              <li onclick="brandChecker(0),window.location.href='BrandDetail.html'">Maruti</li>
+              <li onclick="brandChecker(1),window.location.href='BrandDetail.html'">Hundai</li>
+              <li onclick="brandChecker(2),window.location.href='BrandDetail.html'">Mahindra</li>
+              <li>Volkswagen</li>
+              <li>Skoda</li>
+              <li>Ford</li>
+            </ul>
+          </div>
+    
+          <div id="categories1">
+            CATEGORIES <i class="arrow down"></i>
+            <ul>
+              <li>Bushes</li>
+              <li>Belts</li>
+              <li>BodyParts</li>
+              <li>Breaking System</li>
+              <li>Clutch System</li>
+              <li>Electricals</li>
+              <li>Engine Parts</li>
+              <li>Filters</li>
+              <li>Lighting System</li>
+              <li>Heat and Cooling</li>
+            </ul>
+          </div>
+    
+          <div>MANUFACTURERS <i class="arrow down"></i></div>
+        </div>
+    
+        <div onclick="window.location.href='franchise.html'" style="cursor:pointer;">FRANCHISE</div>
+        <div onclick="window.location.href='careers.html'" style="cursor:pointer;">CAREERS</div>
+      </div>
+    
+    
+      <div class="features">
+        <div>
+         <img src="data:image/webp;base64,UklGRrQBAABXRUJQVlA4TKgBAAAvIMAHEJ9jkG2k+iM87u0hZmSsDSZtG1vSblPktm2DnGbLfANzAwBEIQQQvLmyJACgEEKAYBFcIIBABAAEBwBAATYbFsXjIC4rggUQh4bGj5UYBQiECBaLgMW3jLCr3m0AsmzbNu1qxNmxru+N84zYtm0711r1/zrYqwgR/Z+ABbH+he3m67T/WZm2u8G/UYqv+qgp/FOZFuNFY4Va9dyS8oxXQLJJ1bz4+YnqtEXnT+smq0OxXrM6uwgExuRbIBAIjMm3QOBl0+4Mfkoc4KfE4cFrSupdTkrJZFYyyWQymZVMMlne8OiawmVgyXaxx8PpUJ2WzdROpHp9f/9YLvdVb2X47DQRkLsz1Ts5PzvbBQjIMKrDYnB3icSAoXowg0AipLB3AvXyHyakFq52FEbGwcgwTIuBm31/zeU/uOqE12aqCFbCyHqv0l1KJo0x5rsk03U697+fxb3/rVUHHo6Hr5+Gt8SA2hL7N0z7mJJ6uN7zteJWB0x3QNcE8KPPz/WBYzmLvdd8qXv/pv1zh5a8aH5Aw2Pq7es9FaZqdFrzL9C2nSseRVEH" alt="">
+          <p>LARGEST COLLECTION</p>
+        </div>
+        <div>
+         <img src="data:image/webp;base64,UklGRgYCAABXRUJQVlA4TPkBAAAvFwAIEPejoG0bxvwhjG33MMzIWDNu20ZybCXN/VqySRuyF/sGvhoAAARpL0EMDASwwA4TIAggAie4eAgDteCxIPwQQIAwMSDAABBv5AghgIWBNWgU9f4T3LgABkBjHcbyQEC0bdt0s5Patm3btvFQI7adt3++L/dVHxDR/wmAYMP7ewOM1uys9S/EotHYQv/aTo3IOUlaGhosJHkuUBqVWqdXi4Hi1elWKVqao/iIwzCPHt9tF/eaMcyj4i/VJxG+mPrszLr2l2gfMr0wclIN7FKZMNdqvo0yIH/Vp62bJxTuApusR8faXAV0Kx+0AdRzExjmWJ7DjtyVXod5jMPAPBcnuCyAFY4vch51EXvZabpYpChzWmaP1D0n2iBbIWyT0JZ4dgZrINvF7DJqgs725FP+RbxQpDB+kf+UbMc252c4IzLDmXluA/2cLPRZinIVWXyFk+wHVtmCWd4V6BXccRYtXAX2eNGMA74NmgDT4BsP0HTBPaBRyvIWSyH6VdXP0BJumZUaAaD2hp0o37p/fb3fKkcnb2qhX5W6LGrtMQGm3taiy1QVcl9rJJWqKoWkdg3BxrBt/SDr8WQP1m3hRhF8yEB/INAPyB8whLIyfJPuf1ByeFjyLSNu0j1i7PGKvqkpH68ejVA7KwPKzjQakD67odv1KekBAA==" alt="">
+          <p>HIGH QUALITY PARTS WITH WARRANTY</p>
+        </div>
+        <div>
+         <img src="data:image/webp;base64,UklGRnwCAABXRUJQVlA4THACAAAvHQAIEE/EoG0bQeYP4dn+0uMwI2PNsG3byLFKcu9R5LZtg5xGB/0NnG8AQAAAhAAE19387vUSAhAlwLBzJcsFIcCWhh9s4ceNlTEVBrA/xqonzJsDF0GAMAAxDECUPNOrGiMABEmSTVt1v23btm3btm3rGb3up7+EiP5PAL4jr37nG3JzG+Z/ryIJPONeft5nBBLUbdFj9cTx7e3xRPWjLF1B/oR1PEp7UfiM2pMeWkM9oqr6d36ljzYgxiMGaPuQfrZ6q6IuJOm+JxwY0dPKypNGgPCee0m6+NZyXzZA4r587icCZPct69vlBIzUplWbzM0lnZ0lzWbZVptSDcDh0h8wLcm9nYbXtG23pGngTxJwruvhTPzMHL7WOeCQRRFwq3y8FhR4QL5uIUKWZ2XBpQq9TUx4K9QlZOn5VHVwrBpvj4/eanUMdTqd1TgsagBC5+V1PhQGtAjjmm3RCfRpDaDhR/ppAFhTH5yoJcFtCSdP7x7cSXd4viuPMIs7gRs1YnyoCEhzjY250oAifRjU6wYGtQtTWgVaSqG0BVjVFOxrEOLszmRSnPYM/MywO1NIcdjjgC3NwKr2/TnQKixoCyDHbUsl3qR2X+0yxZNqc+d4sKFN6JC1wFuBVR1wpA28JprUAEv6zvXI/dYSNMmU6I1efcUTfKjfcij/1WEw6b/qxadxpuswQnblHBpyajeEsBudGb6IfdWmgTHpltyTBsG7eo3F31yT1oOh8u2tEoLXZMrF/zKrtkIgOBhCtmQtI9BKky5jAaIvZKok8MJPvRRD0as+C/nPpBs5x0cduknif0PmJGkuhH+veH6uwH8=" alt="">
+          <p>SSL CERTIFIED TRANSACTION</p>
+        </div>
+        <div>
+          <img src="data:image/webp;base64,UklGRiYCAABXRUJQVlA4TBoCAAAvIoAIECdjkG2k+iM87v0gZmSsGbZtGzlYyXnauyM44NwACAAAECIIBAABKIBCAxSA7whAQYAGCEQDiMa/X0JImxgIUAjEYDEAYPCv0BAaIhDBIigAMAABCIQQAAAItm2bkU61bdu2bTvlipN+859EJ+9n9Qgi+s/AbdtGVm/vs5NHoNG0cPVWiySqvV0tNJGJ3mtHROyCVbBFxLnuNa+1nIfi3i51MbwEXUu3roTnLYZpqCj2fivA6SsArfu2FIfUac6Xu6FZVA2OddyJP6dNYbzJWl7X5SNsxmF6DPnxCklm2hfPUFiJ/aHk3YqySYrPU3Q2pZi42bnckeawaBB3cg70hnaHYlC/jKhrdQ0ddtgL17JPcYMUX+eqLp7Zl2uaHLeVyU5S7JVymvpGaXWdpgW5RaXndwIDt7JwJcvovF+ZtCxXb9KFznqlDp0ueavZmF4lnsaAXYsKj5b1M4XC0w0pur8t66OtEIm1vLOz3a3puEqK5q2dnfV6S6ICBhaDMwwUIuPuxfAc827TZcvhEZgvM/ixGh9CBj90V1ejXSCDq02O18p4D8BGtIGBnnFaPaeJazng++hv+jVOHH1zINfJnDbmYDhaNZ+Wa0zmlHN5SOS2nyzcy7m5ZiBDzZgrD8yVp9fvSlmv35OXZP3qXeBhYF5X/2THg/hzxl5yYOglB7YUhzJ0JO92OdWRlm+9REf6x772H90R" alt="">
+          <p>ON - TIME DELIVERY</p>
+        </div>
+    
+      </div>
+    
+      <!-- End of the Header Section  -->
+    
+    
+    
+      <!-- Slider Section start here -->
+      <section>
+        <div id="slider">
+          <div id="inner-box">
+            <div class="slide">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xslider-2.jpg.pagespeed.ic.wD4yRqPU7d.webp">
+            </div>
+            <div class="slide">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xslider-3.jpg.pagespeed.ic.cbnhFK_i7Q.webp">
+            </div>
+            <div class="slide">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xslider-4.jpg.pagespeed.ic.js2KXJ-PlY.webp">
+            </div>
+            <div class="slide">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xslider-7.jpg.pagespeed.ic.BAKcTOJCz8.webp">
+            </div>
+            <div class="slide">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xslider-1_1_.jpg.pagespeed.ic.CbiR6hPmV9.webp">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="brands">
+        <div id="container">
+          <h2 style="height: 34px;"><strong>BROWSE BY BRANDS</strong></h2>
+          <div id="row">
+            <div><a href="/BrandDetail.html" onclick="brandChecker(0)"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xmarutisuzuki_1.png.pagespeed.ic.9zcpkCRaUE.webp"> </a></div>
+    
+            <div><a href="/BrandDetail.html" onclick="brandChecker(1)"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xhundai_1.png.pagespeed.ic.BdhzVhklJm.webp"> </a></div>
+    
+            <div><a href="/BrandDetail.html" onclick="brandChecker(2)"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xmahindra_1.png.pagespeed.ic.H0Q9fj69-h.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/tata/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xtata_2.png.pagespeed.ic.nCbNq88VZS.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/toyota/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xtoyota_1.png.pagespeed.ic.IxoTAzW7q5.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/honda/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xhonda_2.png.pagespeed.ic.RqKvPjjWvt.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/renault/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xrenault_1.png.pagespeed.ic.5-rdnKPUGj.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/nissan/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xnissan_2.png.pagespeed.ic.9Lv9njX03Y.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/ford/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xford_2.png.pagespeed.ic.yRoMho8eeQ.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/volkswagen/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xvolkswagen_1.png.pagespeed.ic.xh75aPdEE-.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/skoda/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xskoda_1.png.pagespeed.ic.GxIn_f-FMI.webp"> </a></div>
+    
+            <div><a href="https://spareshub.com/chevrolet/"> <img class="brandimglogo"
+                  src="https://spareshub.com/pub/media/wysiwyg/xchevrolet_1.png.pagespeed.ic.iMnoXvlNrz.webp"> </a></div>
+          </div>
+        </div>
+        <div id="container2">
+          <h2><strong>BEST CAR SPARE PARTS ONLINE STORE IN INDIA</strong></h2>
+          <div id="row2">
+            <div><img class="img2"
+                src="https://spareshub.com/pub/media/wysiwyg/xstore_desc1.png.pagespeed.ic.QeIqAs1tup.webp" alt=""></div>
+            <div><img class="img2"
+                src="https://spareshub.com/pub/media/wysiwyg/xstore_desc2.png.pagespeed.ic.qCLek5dY0b.webp" alt=""></div>
+            <div><img class="img2"
+                src="https://spareshub.com/pub/media/wysiwyg/xstore_desc3.png.pagespeed.ic.XC8OwhuOg9.webp" alt=""></div>
+    
+            <div><img class="img2"
+                src="https://spareshub.com/pub/media/wysiwyg/xstore_desc4.png.pagespeed.ic.yv3DfZWc1W.webp" alt=""></div>
+            <div><img class="img2"
+                src="https://spareshub.com/pub/media/wysiwyg/xstore_desc5.png.pagespeed.ic.8b_hPnA0Rb.webp" alt=""></div>
+            <div><img class="img2"
+                src="https://spareshub.com/pub/media/wysiwyg/xstore_desc6.png.pagespeed.ic.eidaIC4hNY.webp" alt=""></div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="products-section">
+        <h2>PRODUCT_LIST</h2>
+        <div id="products"></div>
+      </section>
+    
+      <section id="testimonials">
+        <h2>TESTIMONIALS</h2>
+        <div id="testimonials-container">
+          <div class="testimonial-people">
+            <div class="image">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xtest1.jpg.pagespeed.ic.T3x9fg9RM3.webp" alt="Dilip">
+            </div>
+            <div class="name">
+              <h3>Meenakshi Shinde</h3>
+              <p>I purchased a clutch set for my Volkswagen Vento from your website. I was happy with the parts and the service. Thanks SparesHub.</p>
+            </div>
+          </div>
+          <div class="testimonial-people">
+            <div class="image">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xtest2.jpg.pagespeed.ic.vNI_ICt75i.webp" alt="Rohan">
+            </div>
+            <div class="name">
+              <h3>Rohan Yadav</h3>
+              <p>"Got my order of brake pads delivered today. First I was not sure if I should buy parts online, but my
+                experience has been good"</p>
+            </div>
+          </div>
+          <div class="testimonial-people">
+            <div class="image">
+              <img src="https://spareshub.com/pub/media/wysiwyg/xtest3.jpg.pagespeed.ic.M9qbtFqueD.webp" alt="Dilip">
+            </div>
+            <div class="name">
+              <h3>Dilip Londhe</h3>
+              <p>Kudos to your website. I finally found the brake pads and sensors for my BMW 3 Series 2010 at a great
+                price. :)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <div class="callbtn" style="display: none;">
+        <img
+          src="data:image/webp;base64,UklGRrgBAABXRUJQVlA4TKwBAAAvL8ALAGfjoG0kSYprtPxxLMrnjoSDtpEkOZqk59ndo3UG0rZJ71/ivWz+1bZtw4zuyRv3/ycgieREwOMgP1+SREBOJEnADxVMYoKJFMSEJCBRttiOsqEJKBhNxJA5G2YLE2GFKMQkJ2Jgcs491++QrSiazAalOCf/IxPlnCQE2WUrTCKUbZj/DyLyuyRJFJAA0m1rx5tYb98v/G5t221S27YdP/9//DnrfWadRfQ/8e+WYUMDZ3Ds/HQ4Ab7Q4i8ZL70SXKGlClnHMR082tAX2bX5MHjCu+S8Rw4c2fZncpZGBTjEaIlck3FwRGfIdduWBUd0hpzXfUmwxCfqZB9Cgkfreyfrpz8OLnFJ1vegBq5wnqz6sh9cmY5Xsl46k+AKrpO9H9bBlG15IKu+4oNDhA0NapHxElmlBZ8OQxdTOxv9UagFN8ku5kMy4yuUyXib8+lQyTUdkWNvoHmtSlaxENWhksIFOT6eyLUloCS7bqlRZURASXZcUqPZCNRk6xF5P/akoaiJ1U/yuOuTUNYDQwd/5KiddAtwyOjw9tmNcbU3rRlgkmFHXMc/Gw==">
+      </div>
+    
+      <div id="form-div" style="display: block;">
+        <span id="cross-btn">x</span>
+        <p>CONFUSED ABOUT A PART? SUBMIT YOUR NUMBER AND WE'LL CALL YOU BACK!</p>
+        <form>
+          <input type="text" id="enquiryInput" />
+          <button type="SUBMIT">Submit</button>
+        </form>
+      </div>
+    
+    
+      <footer id="footer">
+        <div class="footer-ribbon">Spareshub</div>
+        <div class="mainBox">
+          <div class="box1">
+            <div>
+              <p onclick="window.location.href='about.html'">About Us</p>
+              <p>Contact Us!</p>
+              <p>Call us - 9307901458</p>
+              <p>Whatsapp us - 9307901458
+              </p>
+              <p>Email us - care@spareshub.com</p>
+            </div>
+            <div>
+              <p onclick="window.location.href='franchise.html'">Franchise</p>
+              <p>Feedback</p>
+              <p>Disclaimer</p>
+              <p>Legal</p>
+              <p>Privacy Policy</p>
+            </div>
+            <div>
+              <p>Shipping Policy</p>
+              <p>Refund Policy</p>
+              <p>Terms Conditions</p>
+              <p>Connect With Us</p>
+            </div>
+            <div>
+              <p style="font-size: 20px;">Be the First to know</p>
+              <p style="color: gray;">Get all the latest information on Events, Sales and Offers. Sign up for newsletter
+                today.</p>
+              <p style="color: gray;">Enter your email address</p>
+              <form id="subscribe">
+                <input name="email" type="email" id="footer_newsletter"
+                  data-validate="{required:true, 'validate-email':true}">
+                <input type="submit" id="subscribe-button" value="subscribe">
+              </form>
+            </div>
+          </div>
+          <div class="box2">
+            <div>© 2017 Catalyst Retail Pvt. Ltd. All Rights Reserved. The website www.spareshub.com is owned and operated
+              by Catalyst Retail Pvt. Ltd. Your use of this
+              website signifies your agreement to the terms of use of this website. All brand and product names and
+              associated logos contained within this website
+              |belong to their respective owners and are protected by copyright. Names and Images above are for
+              representational purpose only to serve as a guide to
+              the user of the website and SparesHub.com is in no way associated with any of the above mentioned automobile
+              manufacturers.</div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/productData.js"></script>
+<script src="./js/enquiry.js"></script>
+
+<script>
+  var name = JSON.parse(localStorage.getItem("name"))
+  console.log(typeof (name))
+  if (name === 'null') {
+    document.querySelector("#userName").innerText = "Welcome at spareshub"
+  } else {
+    document.querySelector("#userName").innerText = "Welcome " + name
+  }
+</script>
